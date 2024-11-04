@@ -1,0 +1,40 @@
+Weather Prediction Model Explanation Notes
+Import Libraries:
+
+Use libraries to handle data, perform calculations, and build machine learning models. Key libraries include:
+pandas for data manipulation.
+numpy for numerical calculations.
+scikit-learn for machine learning functions.
+Load and Prepare Data:
+
+Read the data from a CSV file.
+Remove unnecessary columns.
+Separate the data into input features (like humidity, wind speed, pressure, and cloud cover) and the target variable (temperature).
+Split Data:
+
+Divide the dataset into training and testing sets:
+The training set (80% of data) is used to teach the model.
+The testing set (20% of data) is used to evaluate how well the model has learned.
+Standardize Features:
+
+Adjust the input features so they are on a similar scale (e.g., zero mean and unit variance). This step helps improve the model's performance and learning speed.
+Initialize Models:
+
+Create multiple types of regression models (e.g., Linear Regression, Lasso, Ridge, ElasticNet, SGD Regressor) to compare their performance in predicting temperature.
+Train Models:
+
+Use the training data to teach each model about the relationship between input features and temperature. Each model learns from the same training data.
+Predict and Evaluate:
+
+After training, use each model to make predictions based on the training data.
+Calculate performance metrics for each model, including:
+Mean Squared Error (MSE): Indicates the average error in predictions (lower values are better).
+R² Score: Represents the model's accuracy as a percentage (higher values indicate better performance).
+Display Results:
+
+Print the error and accuracy of each model to compare their performances.
+User Input for Prediction:
+
+Allow the user to enter values for humidity, wind speed, pressure, and cloud cover.
+Standardize these input values to match the scale used in training.
+Use one of the trained models to predict the temperature based on the user’s input and display the result.
